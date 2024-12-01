@@ -1,0 +1,603 @@
+
+ /* تنسيق الصفحة بالكامل */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white
+}
+
+/* رأس الصفحة */
+header {
+    text-align: center;
+    background-color: #16e21d;
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    border: red;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* حقل البحث */
+/* تنسيق عام للبحث */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* حقل البحث */
+#search {
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 30px;
+    border: 2px solid #1ea7dd;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* تأثير عند التفاعل مع حقل البحث (focus) */
+#search:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+/* إضافة أيقونة البحث */
+.search-container::before {
+    
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* محاذاة النص داخل حقل البحث */
+#search {
+    padding-left: 40px; /* إضافة مسافة لتوسيع الحقل بسبب الأيقونة */
+}
+
+
+/* قائمة الكتب */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0.8rem;
+}
+
+.book {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 0.8rem;
+}
+
+.book h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.book p {
+    color: #555;
+}
+
+.book .btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.book .btn:hover {
+    background-color: #45a049;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .countdown-container {
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  #countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .time {
+    background-color: #b0d81f;
+    border: 2px solid #8400ff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50px;
+  }
+  
+  .time span {
+    font-size: 1rem;
+    color: #000;
+    
+  }
+  
+  .time p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #6045a0;
+    font-weight: bold;
+  }
+ 
+
+ /* إعدادات الأساسيات */
+ body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+  
+  /* تنسيق حاوية الخطة */
+  .goal-plan {
+    background-color: #fff;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* عنوان الخطة */
+  .goal-plan h1 {
+    font-size: 36px;
+    color: #a31f2a;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border: #a31f2a 10px solid;
+  }
+  
+  /* العناوين الفرعية */
+  h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+  
+  /* الفقرات */
+  p, ul {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  /* تنسيق القوائم */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+  
+  ul li {
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  ul li::before {
+    content: '✔';
+    color: #28a745;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* تنسيق الزر */
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /*    amploi */
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    direction: rtl;
+  }
+  
+  .goal-plan {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+    
+
+  body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  background-color: #27a0b6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.calendar div {
+  padding: 10px;
+  background-color: #e2e2e2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calendar div:hover {
+  background-color: #ddd;
+}
+
+.calendar div.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.selected-day,
+.motivational-message,
+.prayer-times {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.motivational-message {
+  font-size: 1.2em;
+  color: #4CAF50;
+}
+
+.prayer-times {
+  font-size: 1em;
+  color: #333;
+}
+
+
+.about-me {
+  background: #f4f9fd;
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.about-me h3 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about-me p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.social-link {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+.social-link i {
+  margin-right: 8px;
+  font-size: 1.3em;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  background-color: #4CAF50;
+}
+
+.social-link.whatsapp {
+  background-color: #25D366;
+}
+
+.social-link.whatsapp:hover {
+  background-color: #128C7E;
+}
+
+.social-link.facebook {
+  background-color: #3b5998;
+}
+
+.social-link.facebook:hover {
+  background-color: #8b9dc3;
+}
+
+.social-link.tiktok {
+  background-color: #000;
+}
+
+.social-link.tiktok:hover {
+  background-color: #69b8b9;
+}
+
+
+/* الأساسيات التي تنطبق على جميع الأجهزة */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* الحد الأقصى للعرض */
+  margin: 0 auto;
+  padding: 10px;
+}
+
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #34c427;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%; /* لتناسب الصور مع عرض الشاشة */
+  height: auto;
+}
+
+/* Media Query لجميع الهواتف والأجهزة المحمولة */
+@media (max-width: 767px) {
+  .container {
+    padding: 5px; /* تقليل الحشو في الهواتف */
+  }
+
+  header, footer {
+    padding: 10px; /* تقليل الحشو في الهواتف */
+  }
+
+  h1 {
+    font-size: 20px; /* حجم خط أصغر على الهواتف */
+  }
+
+  .content {
+    font-size: 14px; /* تقليل حجم الخط على الهواتف */
+  }
+}
+
+/* Media Query للأجهزة اللوحية والهواتف الكبيرة (من 768px إلى 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%; /* تقليص العرض قليلاً للأجهزة اللوحية */
+  }
+
+  header, footer {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .content {
+    font-size: 16px;
+  }
+}
+
+/* Media Query للحواسيب المكتبية (أكبر من 1024px) */
+@media (min-width: 1025px) {
+  .container {
+    width: 80%; /* عرض أوسع للأجهزة الكبيرة */
+  }
+
+  header, footer {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px; /* حجم خط أكبر للحواسيب */
+  }
+
+  .content {
+    font-size: 18px;
+  }
+}
